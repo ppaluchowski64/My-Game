@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cb68xnllu3pi3"]
+
+[ext_resource type="Texture2D" uid="uid://66jtvca5my3w" path="res://sprites/tux/tux.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://p2gh682ls3bo" path="res://scripts/player_controller.gd" id="1_g2els"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g2els"]
+radius = 6.0
+height = 24.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_g2els")
+speed = 5.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(0, -25)
+zoom = Vector2(4, 4)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+texture = ExtResource("1_3vyb7")
+region_enabled = true
+region_rect = Rect2(0, 0, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_g2els")

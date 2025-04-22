@@ -1,0 +1,9 @@
+CREDITS
+
+Artwork: Tux - Kyrodian Legends Style
+Author: Kelvin Shadewing
+Source: https://opengameart.org/content/tux-kyrodian-legends-style
+License: CC-BY-SA 4.0
+
+I am using this artwork in my project. According to the terms of the CC-BY-SA 4.0 license, any modifications I make to this asset must be shared under the same license.
+I appreciate the author for making this asset available!
